@@ -1,0 +1,96 @@
+<html>
+  <sidebar>
+    <sidebaritem>Team</sidebaritem>
+  </sidebar>
+  <pagemenu>
+  </pagemenu>
+  <pagemenu2>
+  </pagemenu2>
+  <div id="pageframe"></div>
+</html>
+
+
+<style>
+  body
+  {
+    margin: 0;
+  }
+
+  sidebar
+  {
+    position: absolute;
+    float: left;
+    z-index: 10;
+    display: block;
+    background: rgb(175,50,50);
+    height: 100%;
+    width: 100px;
+    box-shadow: 0px 0px 0px black;
+    border-right: 1px solid gray;
+  }
+
+  sidebar sidebaritem
+  {
+    position: relative;
+    background: white;
+    height: 80px;
+    display: block;
+    width: 80px;
+    border-radius: 400px;
+    font-family: verdana;
+    color: black;
+    margin: 10px;
+
+  }
+
+  pagemenu, pagemenu2
+  {
+    position: absolute;
+    display: block;
+    background: none;
+    float: left;
+    width: auto;
+
+    right: 0;
+    line-height: 40px;
+    vertical-align: middle;
+    color: rgb(175, 50, 50);
+    color: black;
+    left: 150px;
+    height: 40px;
+    top: 50px;
+    right: 50px;
+
+  }
+
+  pagemenu2
+  {
+    top: 100px;
+    border-bottom: 1px solid rgb(175, 50, 50);
+
+  }
+
+  pagemenu pagemenuitem, pagemenu2 pagemenuitem
+  {
+    font-family: courier;
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+  #pageframe
+  {
+    position: absolute;
+    display: block;
+    background: white;
+    float: left;
+    overflow-y: hidden;
+    width: auto;
+    right: 0;
+    left: 150px;
+    height: auto;
+    top: 150px;
+    right: 50px;
+    bottom: 0;
+    height: auto;
+  }
+</style>

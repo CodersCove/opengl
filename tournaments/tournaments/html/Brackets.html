@@ -1,0 +1,202 @@
+<html>
+  <bracketbox>
+    <bracket1top>
+      <bracketteam1><team><centertext>SKT</centertext></team></bracketteam1>
+      <bracketteam2><team><centertext>SKT</centertext></team></bracketteam2>
+    </bracket1top>
+    <bracket1bottom>
+      <bracketteam1><team><centertext>SKT</centertext></team></bracketteam1>
+      <bracketteam2><team><centertext>SKT</centertext></team></bracketteam2>
+    </bracket1bottom>
+    <bracket2top>
+      <bracketteam1><team><centertext>SKT</centertext></team></bracketteam1>
+    </bracket2top>
+    <bracket2bottom>
+      <bracketteam1><team><centertext>SKT</centertext></team></bracketteam1>
+    </bracket2bottom>
+    <bracket3wrapper>
+    </bracket3wrapper>
+    <bracket3>
+      <bracketteam3><team><centertext>SKT</centertext></team></bracketteam3>
+    </bracket3>
+
+  </bracketbox>
+
+</html>
+
+
+<style>
+  body
+  {
+    margin: 0;
+  }
+  sidebar
+  {
+    float: left;
+    background: blue;
+    height: 100%;
+    width: 100px;
+  }
+
+  bracketbox
+  {
+    display: block;
+    position: relative;
+    background: none;
+    border: 0px solid black;
+    width: auto;
+    min-height: 450px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    height: 80%;
+  }
+
+  bracket1top, bracket1bottom, bracket2top, bracket2bottom
+  {
+    position: absolute;
+    display: block;
+    float: left;
+    height: 23%;
+    width: 200px;
+    border: 1px solid rgba(175, 50, 50, 1);
+    border-left-width: 0;
+  }
+
+  team {
+    display: block;
+    position: absolute;
+    background: rgb(175, 50, 50);
+    height: 78px;
+    width: 80px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px rgb(175, 50, 50);
+    margin-top: 1px;
+    margin-left: 10px;
+
+  }
+
+  centertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    font-family: courier;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+  }
+
+
+
+  bracket2top, bracket2bottom {
+    left: 200px;
+  }
+
+  bracket1bottom, bracket2bottom
+  {
+    bottom: 10%;
+  }
+
+  bracket1bottom
+  {
+
+    bottom: 10%;
+  }
+
+  bracket1top {
+    top: 9%;
+  }
+
+  bracket2bottom
+  {
+    bottom: -1%;
+  }
+
+  @keyframes team
+  {
+    0%{ box-shadow: 0px 0px 0px black;}
+
+    20%{ box-shadow: 0px 0px 20px black;}
+    80%{ box-shadow: 0px 0px 50px black;}
+    100% { box-shadow: 0px 0px 5px black;}
+  }
+
+  bracket2top {
+    top: 20.5%;
+  }
+
+  bracket2bottom, bracket2top
+  {
+    border: none;
+    border-top: 1px solid rgba(175, 50, 50, 1);
+  }
+
+  bracket2bottom bracketteam1, bracket2top bracketteam1
+  {
+    left: 50%;
+    margin-left: -50px;
+  }
+
+  bracketteam1, bracketteam2, bracketteam3
+  {
+    position: absolute;
+    display: block;
+    height: 80px;
+    background: white;
+    top: -50px;
+    width: 100px;
+    border: 1px solid rgb(175, 50, 50);
+    border-radius: 4px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  bracketteam2
+  {
+    position: absolute;
+    top: auto;
+    bottom: -50px;
+  }
+
+  bracket3wrapper {
+    position: absolute;
+    height: 57.5%;
+    width: 0px;
+    left: 400px;
+    float: left;
+    top: 20.5%;
+    border-left: 1px solid rgba(175, 50, 50, 1);
+  }
+
+  bracket2bottom, bracket2top, bracket3wrapper
+  {
+    opacity: 0.5;
+  }
+
+  bracket2bottom bracketteam1, bracket2top bracketteam1, bracket3 bracketteam3
+  {
+
+  }
+
+  bracket3 {
+    position: absolute;
+    height: 0;
+    width: 150px;
+    left: 400px;
+    float: left;
+    top: 46.5%;
+    opacity: 0.5;
+    border-top: 1px solid rgba(175, 50, 50, 1);
+  }
+
+  bracketteam3
+  {
+    position: absolute;
+    top: 0;
+    float: left;
+    left: 50px;
+    transform: translateY(-50%);
+  }
+
+
+</style>
